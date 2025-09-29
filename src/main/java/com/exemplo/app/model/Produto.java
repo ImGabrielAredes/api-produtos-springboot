@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Entity
-@Table(name = "produtos") 
+@Table(name = "Produto") 
 public class Produto {
 
     @Id
@@ -25,6 +25,7 @@ public class Produto {
     private Long id;
     private String nome;
     private String descricao;
+    private Integer quantidade;
     private Double preco;
 
 }
